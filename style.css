@@ -1,0 +1,125 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #efefef;
+    font-style: normal;
+    line-height: normal;
+    color: black;
+    padding: 50px 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 30px 117px 30px 30px;
+}
+
+.container:nth-child(2) {
+    margin: 32px auto;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.recipes {
+    justify-content: space-between;
+}
+
+.recipe {
+    flex-direction: column;
+    width: calc(30%);
+    border: 1px solid #E6E6E6;
+    text-align: center;
+    position: relative;
+}
+
+.recipe p {
+    text-align: justify;
+    margin: 0 10px 21px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.recipe h3 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.range-wrap {
+    position: relative;
+}
+
+input[type="range"] {
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 12rem;
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+/***** Mozilla *****/
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-moz-range-track {
+    background-color: black;
+    height: 1.5px;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+    appearance: none;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border: none;
+}
+
+output {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    display: inline-block;
+    bottom: 20px;
+    left: 0.2rem;
+}
+
+#first:hover,
+#second:hover,
+#third:hover {
+    border: 1px solid rgb(15, 194, 97);
+    cursor: pointer;
+}
+
+img#selection-one,
+img#selection-two,
+img#selection-three {
+    position: absolute;
+    top: -11px;
+    right: -8px;
+    display: none;
+}
+
+.selected {
+    border: 1px solid rgb(15, 194, 97);
+}
+
+#calculations p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Pasirinkite receptą</h2>
+        <div class="recipes flex">
+            <div class="recipe flex" id="first">
+                <img src="images/Group 5.svg" id="selection-one"></img>
+                <img src="images/Rectangle 3.png" alt="chicken and salad">
+                <h3>Vištiena su salotom</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque veniam minus aut quam porro eligendi
+                    animi aperiam soluta.</p>
+            </div>
+            <div class="recipe flex" id="second">
+                <img src="images/Group 5.svg" id="selection-two"></img>
+                <img src="images/Rectangle 3(1).png" alt="cake with blueberries">
+                <h3>Tortas su mėlynėm</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque veniam minus aut quam porro eligendi
+                    animi aperiam soluta.</p>
+            </div>
+            <div class="recipe flex" id="third">
+                <img src="images/Group 5.svg" id="selection-three"></img>
+                <img src="images/Rectangle 3(2).png" alt="pasta with meat">
+                <h3>Makaronai su mėsa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque veniam minus aut quam porro eligendi
+                    animi aperiam soluta.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Kiek porcijų gaminsite?</h2>
+        <div class="range-wrap">
+            <input type="range" name="portions" id="portions" min="1" max="12" value="1">
+            <output id="output">1</output>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Jums reikės šių ingredientų, tokiais kiekiais:</h2>
+        <div id="calculations"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
